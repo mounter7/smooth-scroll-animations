@@ -1,0 +1,39 @@
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 500px;
+    text-align: center;
+}
+#section-1 {
+    background: #ffcfe2;
+}
+#section-2 {
+    background: #d7ffcf;
+}
+#section-3 {
+    background: #d4cfff;
+}
+#section-4 {
+    background: #fff6cf;
+}
+
+#section-2 h1 {
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: 500ms;
+}
+#section-2.show-animate h1 {
+    opacity: 1;
+    transform: translateX(0);
+}
+#section-4 h1 {
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: 500ms;
+}
+#section-4.show-animate h1 {
+    opacity: 1;
+    transform: translateX(0);
+}
